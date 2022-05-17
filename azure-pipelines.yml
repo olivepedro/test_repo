@@ -4,7 +4,8 @@ pr:
     include:
     - '*'  # must quote since "*" is a YAML reserved character; we want a string
 
-pool: aks
+pool:
+  vmImage: ubuntu-latest
 
 steps:
 - script: echo Hello, world!
